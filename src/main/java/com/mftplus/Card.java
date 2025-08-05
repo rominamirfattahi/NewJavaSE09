@@ -15,4 +15,14 @@ import lombok.experimental.SuperBuilder;
 
 public class Card extends Account{
     private String cardNumber;
+
+    @Override
+    public void recipt() {
+
+    }
+
+    @Override
+    public void pay() {
+
+    }
 }

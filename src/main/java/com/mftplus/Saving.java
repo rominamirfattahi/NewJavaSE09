@@ -14,16 +14,17 @@ import lombok.experimental.SuperBuilder;
 @ToString
 
 
-public class Saving extends Account{
+public abstract class Saving extends Account{
+    private int id;
     private int profit;
 
     @Override
-    public boolean recipt() {
-        return super.recipt();
+    public void pay() {
+
     }
 
     @Override
-    public boolean pay() {
-        return super.pay();
+    public void recipt() {
+
     }
 }

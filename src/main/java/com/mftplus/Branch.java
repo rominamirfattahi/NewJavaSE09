@@ -6,24 +6,18 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
+import java.util.ArrayList;
+
+
 @NoArgsConstructor
 @Getter
 @Setter
 @SuperBuilder
 @ToString
 
-public class Check extends Account{
-    private int id;
-    private String checkNumber;
+public class Branch {
+   private String address;
+   private Bank bank;
+   private ArrayList<Account> accountList;
 
-
-    @Override
-    public void pay() {
-
-    }
-
-    @Override
-    public void recipt() {
-
-    }
 }

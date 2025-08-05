@@ -12,11 +12,10 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @ToString
 
-public class Account implements Transaction {
+public abstract class Account implements Transaction {
 
-    private int accountId;
+    private String accountNumber;
+    private Customer customer;
 
-    public Account(int accountId) {
-        this.accountId = accountId;
-    }
+
 }

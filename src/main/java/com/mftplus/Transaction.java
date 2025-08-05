@@ -1,11 +1,7 @@
 package com.mftplus;
 
 public interface Transaction {
-    default boolean pay() {
-        return false;
-    }
+    void pay();
 
-    default boolean recipt() {
-        return false;
-    }
+    void recipt();
 }
