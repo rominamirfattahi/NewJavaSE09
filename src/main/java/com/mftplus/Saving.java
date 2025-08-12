@@ -14,8 +14,7 @@ import lombok.experimental.SuperBuilder;
 @ToString
 
 
-public abstract class Saving extends Account{
-    private int id;
+public class Saving extends Account{
     private int profit;
 
     @Override

@@ -13,7 +13,6 @@ import lombok.experimental.SuperBuilder;
 @ToString
 
 public class Check extends Account{
-    private int id;
     private String checkNumber;
 
 

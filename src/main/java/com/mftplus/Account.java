@@ -16,6 +16,7 @@ public abstract class Account implements Transaction {
 
     private String accountNumber;
     private Customer customer;
+    private Branch branch;
 
 
 }

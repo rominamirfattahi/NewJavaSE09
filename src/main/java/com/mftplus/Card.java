@@ -18,11 +18,11 @@ public class Card extends Account{
 
     @Override
     public void recipt() {
-
+        System.out.println(this.getCustomer().getName()+" "+"recipted");
     }
 
     @Override
     public void pay() {
-
+        System.out.println(this.getCustomer().getName()+" "+"paid");
     }
 }

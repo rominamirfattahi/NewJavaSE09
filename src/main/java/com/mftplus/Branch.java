@@ -20,4 +20,12 @@ public class Branch {
    private Bank bank;
    private ArrayList<Account> accountList;
 
+   public void addAccount(Account account){
+      if (accountList == null){
+          accountList = new ArrayList<>();
+      }
+      accountList.add(account);
+      account.setBranch(this);
+   }
+
 }
